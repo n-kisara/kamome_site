@@ -1,0 +1,32 @@
+.questions {
+    width: 500px;
+    margin: 0 auto;
+}
+dl {
+    width: 500px;
+}
+
+dt {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    align-items: center;
+}
+
+dt:after {
+    font-family: "Font Awesome 5 Free"; /*←ココ！！！！！！！*/
+    font-weight: 900;
+    content: "\f107";
+}
+
+
+dt.open::after {
+    rotate: 180deg;
+}
+
+dd {
+    padding-top: 10px;
+    display: none;
+}

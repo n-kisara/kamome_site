@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+@import url("price.css");
+@import url("question.css");
+@import url("price.css");
+
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+.container {
+    min-width: 976px;
+    width: 100%;
+}
+
+.wrapper {
+    width: 930px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #1accb4;
+    color: #000;
+}
+
+#drawer-toggle {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+#global_nav {
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+    font-size: 16px;
+    opacity: 1;
+}
+
+#global_nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#global_nav ul li {
+    display: inline-block;
+    transition: color .3s;
+    padding: 0 10px;
+}
+
+#global_nav ul li a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+#global_nav ul li:hover a {
+    color: #fff;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+/* main */
+#mainvisual img {
+    width: 100%;
+}
+
+#thumbnails img {
+    width: 150px;
+    padding-right: 10px;
+}
+.container {
+    text-align: center;
+}
+
+#charm {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#charm ol {
+    font-size: 20px;
+}
+
+#charm li {
+    padding-bottom: 10px;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#pageTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#pageTop img {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width:767px){
+    .container,.wrapper {
+        min-width: unset;
+    }
+
+    #charm {
+        width: 100%;
+    }
+    #charm ol{
+        font-size: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+
+    header {
+        padding-right: 0;
+    }
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    #global_nav {
+        box-sizing :border-box;
+        position: fixed;
+        top: 60px;
+        display: none;
+        width: 100%;
+        height: calc(100% - 60px);
+        background-color: #fff;
+        opacity: 0.9;
+        font-size: 10px;
+        z-index: 999;
+        margin: 0;
+    }
+
+    #global_nav ul {
+        font-size: 14px;
+    }
+
+    #drawer-toggle {
+        z-index: 200;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+    }
+
+    #drawer-toggle span {
+        background-color: #000;
+        top: 30px;
+        left: 15px;
+        width: 20px;
+        height: 1px;        
+    }
+    #drawer-toggle span:nth-child(1) {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+    
+    #drawer-toggle span:nth-child(2) {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+    
+    #drawer-toggle span:nth-child(3) {
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+
+    #drawer-toggle.active span {
+        top: 30px;
+        left: 15px;
+        width: 20px;
+        height: 1px;       
+    }
+    
+    #drawer-toggle.active span:first-child {
+        transform: rotate(45deg);
+    }
+    
+    #drawer-toggle.active span:nth-child(2) {
+        display: none;
+    }
+    
+    #drawer-toggle.active span:last-child {
+        transform: rotate(-45deg);
+    }
+
+    #global_nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding :0;
+        margin: 0;
+    }
+
+    #global_nav ul li {
+        padding: 0;
+    }
+    #global_nav ul li a {
+        display: block;
+        padding: 25px 0;
+        border-radius: 5px;
+        color: #666;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+}
